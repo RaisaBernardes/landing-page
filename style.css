@@ -1,0 +1,64 @@
+/* variables */
+:root {
+    --primary: #157AE5;
+    --secondary: radial-gradient(circle, #04040d, #03030c, #03030b, #02020a, #010109);
+}
+
+/* reset default browsers styles */
+body, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* base styles */
+body {
+    background: var(--secondary);
+    overflow-x: hidden;
+    color: white;
+}
+
+.button {
+    background: var(--primary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block; /*------------STUDY*/
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.button:hover {
+    background-color: #2289F5;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: #f2f2f2;
+
+}
+
+
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width:620px) {
+    
+}
+
+
+/* large tablets & laptops styles */
+@media screen and (min-width:960px) {
+    
+}
+
+
+/* desktop styles */
+@media screen and (min-width:1200px) {
+    
+}
