@@ -1,7 +1,6 @@
 /* variables */
 :root {
     --primary: #157AE5;
-    --secondary: radial-gradient(circle, #04040d, #03030c, #03030b, #02020a, #010109);
 }
 
 /* reset default browsers styles */
@@ -16,9 +15,10 @@ li {
 
 /* base styles */
 body {
-    background: var(--secondary);
+    background: radial-gradient(circle, #04040d, #03030c, #03030b, #02020a, #010109);
     overflow-x: hidden;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button {
@@ -39,7 +39,31 @@ input, textarea {
     padding: 10px 16px;
     border-radius: 20px;
     color: #f2f2f2;
+}
 
+h1, h2, h3, h4 {
+    color: #DDDBFF;
+    font-weight: normal;
+}
+
+p, li, a {
+    color: #9893D8;
+}
+
+h1, h3{
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
 }
 
 
@@ -54,11 +78,15 @@ input, textarea {
 
 /* large tablets & laptops styles */
 @media screen and (min-width:960px) {
-    
+    body {
+        font-size: 18px;
+    }
 }
 
 
 /* desktop styles */
 @media screen and (min-width:1200px) {
-    
+    body {
+        font-size: 20px; /* (20px * 1.2em)*/
+    }
 }
