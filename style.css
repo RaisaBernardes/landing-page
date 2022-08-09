@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-    --primary: #157AE5;
+    --primary: #a9afb6;
 }
 
 /* reset default browsers styles */
@@ -15,7 +15,6 @@ li {
     list-style-type: none;
 }
 
-
 /* base styles */
 body {
     background: black;
@@ -24,15 +23,14 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 .button {
-    background: var(--primary);
+    background: #c59719;
     color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
-    display: inline-block; /*------------STUDY*/
+    padding: 6px 40px;
+    display: inline-block;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .button:hover {
-    background-color: #2289F5;
+    background-color: #a57b09;
 }
 input, textarea {
     background: rgba(255, 255, 255, 0.1);
@@ -46,7 +44,7 @@ h1, h2, h3, h4 {
     line-height: 1.4em;
 }
 p, li, a {
-    color: #9893D8;
+    color: #e7e7e7;
     line-height: 1.4em;
     font-size: 1em;
 }
@@ -54,15 +52,14 @@ h1, h3{
     font-size: 1.2em;
 }
 h2 {
-    font-size: 1.6em;
+    font-size: 2.0em;
 }
 h4 {
     font-size: 1.1em;
 }
 .leading {
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
-
 
 
 /* mobile styles */
@@ -154,7 +151,7 @@ h4 {
 
 #contact{
     padding: 30px 20px;
-    background: #0a0a0a;
+    background: #0c0c0c;
 }
 #contact h3, #contact p{
     text-align: center;
@@ -287,15 +284,23 @@ footer .grid{
     #services li{
         grid-column: span 2;
     }
-
     /****CARDS*****/
-
+    #portfolio-card{
+        background-color: #0c0c0c;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 30px 20px;
+    }
+    #portfolio-card h3{
+        margin-top: 30px;
+        margin-bottom: 0;
+        text-align: center;
+    }
     #card-list{
         display: flex;
         padding: 30px 20px;
     }
-
-    
     .card {
         display: flex; 
         position: relative;
@@ -305,9 +310,10 @@ footer .grid{
         max-width: 200px;
         padding: 1.5rem;
         border-radius: 10px;
-        background-color: #17141d;
+        background-color: #0a0a0a;
         box-shadow: -1rem 0 3rem #000;
         transition: .2s;
+        font-size: 15px;
     }
     .card:hover {
         transform: translateY(-1rem);
