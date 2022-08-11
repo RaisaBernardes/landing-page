@@ -1,1 +1,4 @@
-# landing-page full responsive with cards effects
+# landing-page 
+
+- Responsive
+- Cards effects
